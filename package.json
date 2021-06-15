@@ -1,0 +1,17 @@
+{
+  "name": "movieapp",
+  "version": "1.0.0",
+  "description": "Movie Application with Hapi.js Server and Node.",
+  "main": "App.js",
+  "type": "module",
+  "dependencies": {
+    "hapi": "^18.1.0",
+    "sequelize": "^6.6.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

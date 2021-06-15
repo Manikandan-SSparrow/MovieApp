@@ -1,0 +1,15 @@
+Promise - A special JS object that links the producing code to the consuming code.
+
+let promise = new Promise(function(resolve, reject) {} // executor function);
+
+Movie table
+Connect with Sequelize
+ORM - Object Relation Mapping
+
+Movies Methods: 
+-> getMovies - Get all attributes of movies table
+-> setMovies - Set all attributs of movies table
+-> updateViews - Increase total_views of a movies
+
+Migration
+
