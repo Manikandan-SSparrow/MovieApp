@@ -6,7 +6,7 @@ const Movie = require("../model/Movie");
 async function setMovies() {
     console.log("Setting movie details.");
     const toyStory = await addMovies("Toy Story", "Kids", 
-    "", 
+    "https://en.wikipedia.org/wiki/Toy_Story#/media/File:Toy_Story.jpg", 
     2284, 4.6);
     const avengers = await addMovies("Avengers", "Science Fiction", 
     "https://en.wikipedia.org/wiki/The_Avengers_(2012_film)#/media/File:The_Avengers_(2012_film)_poster.jpg",
