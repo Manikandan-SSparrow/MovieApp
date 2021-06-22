@@ -4,9 +4,9 @@ const Movie = require("../model/Movie");
 async function getMovies(request, reply) {
     console.log("Test reached here.");
     try {
-        const movies = await setMovies();
+        const movies = await Movie.findAll();
         console.log(movies);
-        return "Sending Response";
+        return movies;
     }
     catch(err) {
         console.log(err);

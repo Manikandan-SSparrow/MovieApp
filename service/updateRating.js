@@ -1,7 +1,8 @@
 const updateViews = require("./updateViews");
 
 function updateRating(totalViews, averageRating, rating) {
-    return (averageRating * totalViews + rating)/updateViews(totalViews);
+    const newRating = (averageRating * totalViews + rating)/updateViews(totalViews);
+    return newRating;
 }
 
-module.exports = updateRating;
+module.exports = updateRating;  

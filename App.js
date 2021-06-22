@@ -4,9 +4,10 @@ const Hapi = require("hapi");
 const db = require("./model/config/database");
 const callback = require("./controller/callback");
 const getMovies = require("./controller/getMovies");
+const setMovies = require("./service/setMovies");
 
 db.authenticate()
-.then(() => console.log("Connected to database.\n"))
+.then(() => console.log( "Connected to database.\n"))
 .catch(err => console.log("Database connection failed with error " + err));
 
 const App = async () => {
@@ -24,6 +25,10 @@ const App = async () => {
         method: 'GET',
         path: '/movies',
         handler: getMovies
+    },{
+        method: 'PUT',
+        path: '/movies',
+        handler: setMovies
     }]);
     
     await server.start();
